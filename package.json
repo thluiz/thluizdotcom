@@ -14,6 +14,7 @@
     "start": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "tslint --project .",
+    "heroku-postbuild": "gatsby build",
     "lint:fix": "tslint --fix --project .",
     "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
   },
